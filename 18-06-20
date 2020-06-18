@@ -1,0 +1,22 @@
+3) Nesting of JSON objects:
+Another way of doing the same thing that we have done above.
+
+var students = {
+  "steve" : {
+  "name" : "Steve",
+  "age" :  "29",
+  "gender" : "male" 
+},
+
+"pete" : {
+  "name" : "Peter",
+  "age" : "32",
+  "gender" : "male"
+},
+
+"sop" : {
+  "name" : "Sophie",
+  "age" : "27",
+  "gender" : "female"
+}
+}
