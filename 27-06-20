@@ -1,0 +1,34 @@
+Program 3: Using for loop/While loop and String function charAt
+
+import java.util.Scanner;
+class PalindromeTest {
+   public static void main(String args[])
+   {
+      String reverseString="";
+      Scanner scanner = new Scanner(System.in);
+
+      System.out.println("Enter a string to check if it is a palindrome:");
+      String inputString = scanner.nextLine();
+
+      int length = inputString.length();
+
+      for ( int i = length - 1 ; i >= 0 ; i-- )
+         reverseString = reverseString + inputString.charAt(i);
+
+      if (inputString.equals(reverseString))
+         System.out.println("Input string is a palindrome.");
+      else
+         System.out.println("Input string is not a palindrome.");
+
+   }
+}
+Output 1:
+
+Enter a string to check if it is a palindrome:
+aabbaa
+Input string is a palindrome.
+Output 2:
+
+Enter a string to check if it is a palindrome:
+aaabbb
+Input string is not a palindrome.
