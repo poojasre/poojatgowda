@@ -1,0 +1,18 @@
+Example:
+
+In this example, we are printing values from 1 to 10 by using the do while loop.
+
+	
+public class DoWhileDemo1 
+{  
+public static void main(String[] args) 
+{  
+inti=1;  
+do
+{  
+System.out.println(i);  
+i++;  
+}while(i<=10);  
+        }  
+}  
+	
