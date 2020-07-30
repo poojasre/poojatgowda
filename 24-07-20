@@ -1,0 +1,16 @@
+Example of Explicit Conversion
+Here, we have one more example of explicit casting, double type is stored into long, long is stored into int etc.
+
+  
+class CastingDemo1
+{ 
+    public static void main(String[] args) 
+    { 
+      double d = 120.04;  
+      long l = (long)d;   
+      int i = (int)l;  
+      System.out.println("Double value "+d); 
+      System.out.println("Long value "+l);  
+      System.out.println("Int value "+i);  
+    }  
+}
