@@ -1,0 +1,35 @@
+Example:
+
+Lets create an example to create an object using newInstance() method of Constructor class.
+
+		
+import java.lang.reflect.*;
+
+public class ReflectionEg
+{
+private String s;
+ReflectionEg()
+{
+}
+public void setName(String s)
+{
+this.s = s;
+}
+public static void main(String[] args)
+{
+try
+{
+Constructorconstructor = ReflectionEg.class.getDeclaredConstructor();
+ReflectionEg r = constructor.newInstance();
+r.setName("studytonight");
+System.out.println(r.s);
+}
+catch (Exception e)
+{
+e.printStackTrace();
+}
+}
+}
+		
+	
+
