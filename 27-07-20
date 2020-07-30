@@ -1,0 +1,38 @@
+4) deserialization
+In Java, when an object is serialized and then deserialized, JVM create another separate object. When deserialization is performed JVM does not use any constructor for creating an object.
+
+Example:
+
+Lets see an example of creating object by deserialization concept.
+
+		
+import java.io.*; 
+
+class DeserializationEg implements Serializable 
+{ 
+    private String a; 
+DeserializationEg(String name) 
+    { 
+this.a = a; 
+    } 
+
+    public static void main(String[] args) 
+    { 
+        try
+        { 
+DeserializationEg b = new DeserializationEg("studytonight"); 
+FileOutputStream c = new FileOutputStream("CoreJava.txt"); 
+ObjectOutputStream  d = new ObjectOutputStream(c); 
+d.writeObject(b); 
+d.close(); 
+d.close(); 
+        } 
+        catch (Exception e) 
+        { 
+e.printStackTrace(); 
+        } 
+    } 
+}
+
+		
+	
